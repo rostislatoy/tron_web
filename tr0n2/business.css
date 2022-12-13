@@ -1,0 +1,354 @@
+
+
+:root {
+    --var-body-bg: white;
+    --var-body-fc: black;
+    --var-header-bg:#918d8d;
+    --var-header-fc:black;
+    --var-rect-color:rgb(44, 107, 150);
+    --var-rect-color-two:rgb(211, 143, 16);
+    --var-sport-rect-one:rgb(105, 173, 185);
+    --var-business-rect-one: #276fc0;
+    --var-business-txt-nano:#276fc0;
+  }
+  @media (prefers-color-scheme: dark) {
+      :root {
+        --var-body-bg:#1A1717;
+        --var-body-fc: white;
+        --var-header-bg:#3A3333;
+        --var-header-fc:rgb(211, 25, 25);
+        --var-rect-color-two:#1e1e1e;
+        --var-sport-rect-one:rgb(207, 74, 74);
+        --var-rect-color:#3A3333;
+        --var-business-rect-one: #AE3131;
+        --var-business-txt-nano:#AE3131;
+      }
+  }
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding:-5px, -5px, -5px, -5px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--var-body-bg);
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+.header-1{
+    width: 60%;
+    height: 100px;
+    background-color: var(--var-header-bg);
+    border-radius: 24px;
+    position: absolute;
+    margin-top: 15%;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+
+  }
+
+  a{
+    outline: none;
+   text-decoration: none;
+  }
+  ul{
+  list-style:none;
+  margin-left: 20%;
+  margin-top: -8%;
+  }
+  
+  li{
+    display: inline-block;
+    padding:3%;
+    font-family: 'Audiowide';
+    font-size: 19px;
+  
+  }
+  .header-text{
+    transition: transform 0.3s;
+    color: white;
+  }
+  .header-text:hover{
+    transform: scale(1.1);
+  }
+  .header-title{
+  font-family: 'Audiowide';
+  text-align: center;
+  font-size: 35px;
+  color:var(--var-header-bg);
+  max-width: 100px;
+  max-height: 50px;
+  margin-top:-1.3%;
+  margin-left: 10%;
+  padding-top:10%;
+  
+  
+  }
+  .header-min{
+    width: 150px;
+    height:75px;
+    font-style: normal;
+  font-weight: 100px;
+  background-color:var(--var-body-bg);
+
+  border-radius:20px;
+  margin-left:1.5%;
+  margin-top: 1.7%;
+  
+  }
+
+  .header-image2{
+    position: absolute;
+    width:50%;
+    margin-top:24%;
+    margin-left:26.6%;
+
+  }
+  #mers-logo{
+    max-width:15%;
+    margin-top:35%;
+    margin-left:-38%;
+    position: absolute;
+  }
+  .small-rect{
+    position: absolute;
+width: 29%;
+height: 264px;
+left: 5%;
+top: 110%;
+
+background: var(--var-business-rect-one);
+border-radius: 26px;
+  }
+  .medium-rect{
+    position: absolute;
+width: 55%;
+height: 264px;
+right: 5%;
+top: 110%;
+
+background: url(images/s-class-block.jpeg) 10%;
+border-radius: 26px;
+  }
+  .max-rect{
+position: absolute;
+width: 418px;
+height: 554px;
+left: 5%;
+top: 153%;
+
+background: #7B6D6D;
+border-radius: 26px;
+}
+.nano-rect{
+  position: absolute;
+width: 92%;
+height: 250px;
+margin: 4% 4%;
+background-color: #D9D9D9;
+border-radius: 24px;
+}
+.nano-rect:nth-child(2){
+  margin-top:69%;
+}
+.giant-rect{
+  position: absolute;
+width: 55%;
+height: 559px;
+
+top: 153%;
+right: 5%;
+
+background: #D9D9D9;
+border-radius: 26px;
+}
+.secondary-medium-rect{
+
+position: absolute;
+width: 96%;
+height: 250px;
+margin:2% 2%;
+
+background: var(--var-business-rect-one);
+box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 24px;
+}
+.secondary-medium-rect:nth-child(2){
+margin-top: 37%;
+}
+.small-rect2{
+  position: absolute;
+  width: 29%;
+  height: 264px;
+  left: 5%;
+  top: 232%;
+  
+  background: #D9D9D9;
+  border-radius: 26px;
+}
+.medium-rect2{
+  position: absolute;
+width: 55%;
+height: 264px;
+right: 5%;
+top: 232%;
+
+background: url(images/amg-block.jpeg) 10%;
+border-radius: 26px;
+}
+.max-rect2{
+  position: absolute;
+width: 418px;
+height: 554px;
+left: 5%;
+top: 276%;
+
+background: #7B6D6D;
+border-radius: 26px;
+}
+.giant-rect2{
+  position: absolute;
+  width: 55%;
+  height: 559px;
+  
+  top: 276%;
+  right: 5%;
+  
+  background: var(--var-business-rect-one);
+  border-radius: 26px;
+  }
+  .nano-rect2{
+    position: absolute;
+  width: 92%;
+  height: 250px;
+  margin: 4% 4%;
+  
+  background: var(--var-business-rect-one);
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+  }
+  .nano-rect2:nth-child(2){
+    margin-top:69%;
+  }
+
+  .secondary-medium-rect2{
+
+    position: absolute;
+    width: 96%;
+    height: 250px;
+    margin:2% 2%;
+    
+    background: #D9D9D9;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+    }
+    .secondary-medium-rect2:nth-child(2){
+      margin-top: 37%;
+      }
+        .title{
+
+        position:absolute;
+        width: 21ch;
+        height: -50px;
+        left: 22%;
+        top: 57%;
+        font-family: 'Courier New';
+        font-style: normal;
+        font-weight: 20;
+        font-size: 32px;
+        color: var(--var-body-fc);
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 4px solid var(--var-body-fc);
+        border-color: var(--var-body-fc);
+        animation: 
+        printed-text 3.5s steps(60, end),
+        flashing-border 0.5s step-end infinite;
+        }
+        @keyframes flashing-border{
+          0%{
+            border-color: white;
+          }
+          50%{
+            border-color: transparent;
+          }
+          100%{
+            border-color: white;
+          }
+        }
+        @keyframes printed-text {
+          from{
+            width: 0; 
+          }
+          to{
+            width: 21ch;
+          }
+        }
+.gle{
+  position: absolute;
+  width:70%;
+  margin-left: -5%;
+}
+.white-txt-in-rect{
+  margin-left:70%;
+  color: white;
+  margin-top:5%;
+  font-family: 'audiowide';
+  font-size: 38px;
+}
+.s_class{
+  position: absolute;
+  width: 80%;
+}
+.gt{
+position: absolute;
+width:70%;
+}
+.red-txt-in-rect{
+  margin-left:70%;
+  color: #AE3131;
+  margin-top:5%;
+  font-family: 'audiowide';
+  font-size: 38px;
+}
+.c{
+  position: absolute;
+  width: 100%;
+  margin-top: -15%;
+  margin-left: -10%;
+}
+.txt-s{
+  font-family: 'courier new';
+  font-size: 32px;
+  color: white;
+  margin: 5% 5%;
+}
+.txt-amg{
+  font-family: 'courier new';
+  font-size: 32px;
+  color: var(--var-business-txt-nano);
+  margin: 5% 5%;
+}
+.txt-gle-nano{
+  font-family: 'courier new';
+  font-size: 26px;
+  color: var(--var-business-txt-nano);
+  margin: 5% 5%;
+}
+.txt-gt-nano{
+  font-family: 'courier new';
+  font-size: 32px;
+  color: #D9D9D9;
+  margin: 5% 5%;
+}
+.txt-c63-nano{
+  font-family: 'courier new';
+  font-size: 26px;
+  color: #D9D9D9;
+  margin: 5% 5%;
+}
